@@ -1,0 +1,17 @@
+[project]
+name = "pinnacle-google"
+version = "0.3.0"
+description = "Read-only Google connector for PinnacleOS. Credentials never enter the LLM."
+requires-python = ">=3.12"
+dependencies = [
+  "google-api-python-client>=2.159.0",
+  "google-auth>=2.37.0",
+  "google-auth-oauthlib>=1.2.1",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["pinnacle_google*"]
